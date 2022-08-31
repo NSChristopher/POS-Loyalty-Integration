@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" modified="2022-05-18T04:24:09.367Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="i-9o_aXuevbQzxt18MWb" version="18.0.7" type="github">
+  <diagram id="7yQhOzrN2eZYEKc4RuEi" name="Page-1">
+    <mxGraphModel dx="1102" dy="618" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="xIJ0mPSYSvT4LCEAJryb-1" target="xIJ0mPSYSvT4LCEAJryb-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="171" y="206" />
+              <mxPoint x="171" y="206" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-1" value="POS API" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="105" y="146" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xIJ0mPSYSvT4LCEAJryb-2" target="xIJ0mPSYSvT4LCEAJryb-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="xIJ0mPSYSvT4LCEAJryb-2" target="xIJ0mPSYSvT4LCEAJryb-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="64" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="64" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xIJ0mPSYSvT4LCEAJryb-2" target="xIJ0mPSYSvT4LCEAJryb-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-2" value="API" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="275" y="146" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-3" value="Identity Server" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="105" y="25" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xIJ0mPSYSvT4LCEAJryb-8" target="xIJ0mPSYSvT4LCEAJryb-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="xIJ0mPSYSvT4LCEAJryb-8" target="xIJ0mPSYSvT4LCEAJryb-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="412" y="206" />
+              <mxPoint x="412" y="206" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-8" value="Blazor Server" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="423" y="146" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xIJ0mPSYSvT4LCEAJryb-9" value="Blazor Client" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="610" y="146" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
