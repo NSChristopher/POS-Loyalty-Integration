@@ -1,3 +1,4 @@
+using LoyaltyAPI.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
+builder.Services.AddHttpClient("meta", c =>
+{
+    c.BaseAddress = new Uri(builder.Configuration.GetValue<string>("APISettings:APIUrl"));
+    c.DefaultRequestHeaders.Add("apikey", builder.Configuration.GetValue<string>("APISettings:APIKey"));
+    c.DefaultRequestHeaders.Add("accept", "application/json");
+});
 
 //Authentication
 builder.Services.AddAuthentication("CookieAuth").AddCookie("CookieAuth", options =>

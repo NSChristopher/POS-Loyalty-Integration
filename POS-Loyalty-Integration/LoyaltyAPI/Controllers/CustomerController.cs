@@ -16,44 +16,31 @@ namespace API.Controllers
     public class CustomerController : ControllerBase
     {
 
-        private static readonly IHttpClientFactory _clientFactory;
+        private readonly IHttpClientFactory _clientFactory;
 
-        private IConfiguration _config;
-
-        public CustomerController(IConfiguration config)
+        public CustomerController(IHttpClientFactory clientFactory)
         {
-            _config = config;
+            _clientFactory = clientFactory;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<String>> RegisterCustomer()  
+        [HttpGet]
+        public async Task<ActionResult<string>> GetCustomer(string customerId)
         {
-            //var request = new HttpRequestMessage(HttpMethod.Get, "https://api.lingaros.com/v1/lingapos/");
-
-            //var client = _clientFactory.CreateClient();
-
-            //HttpResponseMessage response = await client.SendAsync(request);
-
-            //if (response.IsSuccessStatusCode)
-            //{
-            //     return customer = await response.Content.ReadFromJsonAsync<Customer>();
-            //}
-            //else
-            //{
-            //    return null;
-            //}
-
-            // alternative post method
 
             var client = _clientFactory.CreateClient("meta");
 
             try
             {
-                return client.BaseAddress.ToString();
+                HttpResponseMessage response = await client.GetAsync("https://api.lingaros.com/v1/lingapos/customer/" + customerId);
+                response.EnsureSuccessStatusCode();
+
+                string responseBody = await response.Content.ReadAsStringAsync();
+
+                return responseBody;
             }
             catch(Exception ex)
             {
-                return new BadRequestObjectResult(ex.Message);
+                return ex.Message;
             }
         }
 
